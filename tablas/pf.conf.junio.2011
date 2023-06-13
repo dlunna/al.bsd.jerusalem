@@ -1,0 +1,116 @@
+# Junio, 2008
+# PacketFilter Configuration FILE by dlunna.
+#----------------------------------------------------------------
+# macro definitions
+
+int_if="bge1"    #192.168.253.254
+ext_if="bge0"    #200.36.121.30
+
+tcp_pass="{www ssh 3128 443 1863 8080 9093}"
+#1863 msn
+#tcp_openfire="{5222 5223 9090 7777 7070 7443 3478 3479 5229}"
+battlenet="{1119 6112}"
+table <ips_libres> persist file "/etc/tablas/ips_libres"
+table <italia> persist file "/etc/tablas/italia"
+#table <ultra> persist file "/etc/tablas/ultra"
+
+#----------------------------------------------------------------
+# options: "set"
+set limit states 25000
+set limit frags  25000
+set loginterface $int_if
+#set optimization satellite
+
+#----------------------------------------------------------------
+# scrub rules: "scrub"
+scrub in on $ext_if all
+scrub in on $int_if all
+
+#----------------------------------------------------------------
+# NAT rules: "rdr", "nat", "binat"
+rdr on $int_if inet proto {tcp, udp} from any to any port www -> $int_if port 3128
+rdr on $ext_if inet proto {tcp, udp} from any to any port www -> 192.168.253.76 port 80
+#rdr on $ext_if inet proto {tcp, udp} from any to any port 22 -> 192.168.253.76 port 22
+
+#rdr on $ext_if inet proto {tcp, udp} from any to any -> 192.168.252.11
+
+nat on $ext_if from $int_if:network to any -> $ext_if
+
+#----------------------------------------------------------------
+# filtering rules: "antispoof", "block", "pass"
+        #Bloqueo de todo
+block in on $int_if all
+block out on $ext_if proto {tcp,udp} from any to any port 25
+block in  on $ext_if proto {tcp,udp} from any to any port 25
+block out on $ext_if proto {tcp,udp} from any to any port 3128
+block out on $ext_if proto {tcp,udp} from any to any port 53
+block in  on $ext_if proto {tcp,udp} from any to any port 53
+
+        #Bloqueo messenger alumnos
+block in  on $int_if proto {tcp,udp} from 192.168.253.17 to any port 1863
+block out on $int_if proto {tcp,udp} from any to 192.168.253.17 port 1863
+
+        #Paso de lo
+pass out        quick on lo0 from any to any
+pass in         quick on lo0 from any to any
+
+	#Super antispoof
+antispoof quick for $int_if inet
+
+        #Acceso a ping
+pass in         on $int_if inet proto icmp all icmp-type 8 code 0 keep state
+pass out        on $int_if inet proto icmp all icmp-type 8 code 0 keep state
+
+
+        #Paso de DNS externo
+pass in         quick on $ext_if proto {tcp,udp} from any to 200.36.121.30 port 53 keep state
+pass out        quick on $ext_if proto {tcp,udp} from 200.36.121.30 to any port 53 keep state
+        #Paso de DNS interno
+pass in         quick on $int_if proto {tcp,udp} from any to 192.168.253.254 port 53 keep state
+pass out        quick on $int_if proto {tcp,udp} from 192.168.253.254 to any port 53 keep state
+
+
+        #Puertos habilitados
+pass in         quick on $int_if proto {tcp,udp} from any to any port $tcp_pass keep state
+pass out        quick on $int_if proto {tcp,udp} from any to any port $tcp_pass keep state
+
+        #Acceso a Shoutcast
+#pass in  quick on $int_if proto {tcp,udp} from 192.168.253.199 to 192.168.253.254 port 8001 keep state
+#pass out quick on $int_if proto {tcp,udp} from 192.168.253.254 to 192.168.253.199 port 8001 keep state
+#pass in  quick on $int_if proto {tcp,udp} from any to any port 8000 keep state
+#pass out quick on $int_if proto {tcp,udp} from any to any port 8000 keep state
+#pass out quick on $ext_if proto {tcp,udp} from any to any port 8001 keep state
+#pass in  quick on $ext_if proto {tcp,udp} from any to any port 8001 keep state
+
+        #Salida de correos hacia el 200.36.121.26
+pass in  quick on $int_if proto {tcp,udp} from any to 200.36.121.26 port 25 keep state
+pass out quick on $int_if proto {tcp,udp} from 200.36.121.26 to any port 25 keep state
+pass in  quick on $ext_if proto {tcp,udp} from 200.36.121.26 to any port 25 keep state
+pass out quick on $ext_if proto {tcp,udp} from any to 200.36.121.26 port 25 keep state
+
+pass in  quick on $int_if proto {tcp,udp} from any to 200.36.121.26 port 995 keep state
+pass out quick on $int_if proto {tcp,udp} from 200.36.121.26 to any port 995 keep state
+pass in  quick on $ext_if proto {tcp,udp} from 200.36.121.26 to any port 995 keep state
+pass out quick on $ext_if proto {tcp,udp} from any to 200.36.121.26 port 995 keep state
+
+        #Salida para NTP
+#pass in  quick on $int_if proto {tcp,udp} from any to any port 123 keep state
+#pass out quick on $int_if proto {tcp,udp} from any to any port 123 keep state
+#pass in  quick on $ext_if proto {tcp,udp} from 200.36.121.30 to any port 123 keep state
+#pass out quick on $ext_if proto {tcp,udp} from any to 200.36.121.30 port 123 keep state
+
+        #Salida a ips libres
+pass in         quick on $int_if proto {tcp,udp} from <ips_libres> to any
+pass out        quick on $int_if proto {tcp,udp} from any to <ips_libres>
+
+        #Acceso a servidores de ITALIA
+pass in         quick on $int_if proto {tcp,udp} from any to <italia> keep state
+pass out        quick on $int_if proto {tcp,udp} from <italia> to any keep state
+pass in         quick on $ext_if proto {tcp,udp} from <italia> to any keep state
+pass out        quick on $ext_if proto {tcp,udp} from any to <italia> keep state
+
+        #BattleNET
+pass in  quick on $int_if proto {tcp,udp} from any to any port $battlenet keep state
+pass out quick on $int_if proto {tcp,udp} from any to any port $battlenet keep state
+pass in  quick on $ext_if proto {tcp,udp} from any to any port $battlenet keep state
+pass out quick on $ext_if proto {tcp,udp} from any to any port $battlenet keep state

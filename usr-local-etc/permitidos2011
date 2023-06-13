@@ -1,0 +1,287 @@
+08:00:27:d9:9f:cf	#Temporal practica redes 252.199
+# Equipos del rector
+# ---------------------------------------
+c0:cb:38:18:08:35	#Sergio Arteaga		253.200	lap	w
+00:1f:3c:c0:43:e9	#Lap dell del rector
+00:1c:c0:0a:8a:53	#eth RECTOR
+00:1b:fb:57:be:25	#blue RECTOR
+00:13:e8:94:7e:ff	#Lap RECTOR
+
+# Equipos de rectoria
+# ---------------------------------------
+90:4c:e5:c7:79:b1	#Dr. Medina		255.12		w
+00:11:5b:8b:38:ae	#Guillermo Adolfo	253.31		e
+00:1e:c9:65:40:2e	#Edith Munnoz Estrada	254.210		e
+4c:0f:6e:ff:87:6f	#dR Marco Flores	253.44		w
+c4:46:19:a9:24:cd	#adolfo			253.69		w
+00:06:7B:01:20:02	#Margarita Rectoria
+00:15:8A:01:AC:75	#Francisco Perez Mesa
+00:11:2F:D8:C2:DB	#Juanluis
+00:1D:7E:18:CF:85	#Ing Jose Manuel
+00:14:d1:13:26:75	#Edith Rectoria
+00:1e:c9:65:42:fd	#Jose manuel moreno vera
+00:1e:c9:65:42:33	#Dr Juan Luis
+00:1a:80:4a:be:f3	#Dr diaz Lap
+
+# Equipos de planeacion
+# ---------------------------------------
+00:e0:4d:44:e8:ca	#Calderon
+00:06:7b:01:20:02	#Ing Calderon
+00:0C:6E:99:A2:B4	#Ma del Carmen Madrigal
+00:24:01:a2:9b:d0	#Margarita
+
+# Equipos de administracion
+# ---------------------------------------
+00:1a:4d:76:ee:3b	#Ing.Jorge Salas		253.125		pc	e
+00:48:54:80:52:b2	#Felipe Vega			254.19		pc	e	sony vaio
+00:0f:20:2c:40:92	#Jonathan			253.122		pc	e
+#00:1e:c9:65:41:9f	#Barbara Tello
+00:01:4A:08:F2:04	#Diego				254.13		lap	e	sony vaio
+00:0C:6E:99:A5:60	#Felipe
+64:31:50:0f:9e:86	#Victor				253.150		lap	e	hp
+e0:2a:82:a9:d7:80	#Victor				253.150		lap	w	hp
+44:87:fc:8c:8a:c5	#Nelvia				253.35		pc	e	texa
+
+# Equipos de abogados
+# ---------------------------------------
+00:50:8d:50:6d:d9       #Abogada
+
+# Equipos de contraloria
+# ---------------------------------------
+00:1A:4D:76:D1:31	#CONTRALOR
+
+# Equipos del site
+# ---------------------------------------
+1c:6f:65:84:ae:01	#David Luna Cruz		253.199		pc	e
+00:25:b3:57:61:11	#David Luna Cruz		252.199		lap	e	lap compaq
+00:25:56:56:dd:13	#David Luna Cruz		252.199		lap	w	lap wireless
+64:31:50:0f:9e:86	#David Luna			252.199		lap	e	excarpi eth
+00:e0:4d:44:e5:00	#Eduardo Flores Calderon	255.73		pc	e	mac pirata
+e0:f8:47:3e:f8:80	#Eduardo Flores calderon	253.202		pc	w	hacer
+00:1a:4d:76:f1:6b	#Benjamin Ortiz			253.158		pc	e	equipo 2 bluecode
+00:1d:7d:2a:7c:2b	#Benjamin Ortiz			253.160		pc	e	equipo 1
+00:26:5a:06:10:b0	#Eduardo Castillo		253.159		pc	e	ensamblada
+1c:6f:65:84:ae:0d	#Valdelmar			252.8		pc	e	ensamblada
+00:1b:38:97:1c:ff	#Valdelmar			252.8		lap	w	compaq
+#1c:6f:65:84:ad:fa	#Laura penna			253.96		pc	e	dell
+00:1d:7d:2a:a6:aa	#Jonny				255.179		pc	e	bluecode amd
+00:0e:35:50:32:bc	#Cometa lap
+00:E0:4D:44:EC:C3	#ulises
+00:1c:c0:0a:88:cd	#Salas
+00:13:d4:83:ee:a0	#Ivan Garrido
+00:11:d8:cf:fa:64	#Snov
+00:14:2a:45:56:99	#Marco desarrollo
+18:e7:f4:b0:57:73	#Evert ipod			255.24		ipod	w	
+
+# Servidores 
+# ---------------------------------------
+00:30:48:86:9b:bc	#Anterior JB
+08:00:27:07:6e:05	#253.1
+00:1E:0B:8E:F8:2E	#255.8		pbx-site
+00:21:29:68:a9:0d	#253.17		mobilUPP
+00:14:d1:13:25:1b	#253.18		alpha
+00:1c:c0:0a:79:ce	#253.19		bravo
+00:1c:c0:0a:8a:0b	#253.20		coca
+00:1a:64:94:56:0c	#253.21		delta
+00:21:29:68:a8:c8	#253.22		eco tsunamiesad
+68:7f:74:fd:be:29	#253.23		fox 
+
+# Administracion
+# ---------------------------------------
+6c:f0:49:8c:1f:fd	#Jannet				254.228		pc	e	asam
+
+# Vinculacion
+# ---------------------------------------
+00:0f:20:2c:40:3e	#Karen				254.55		pc	w
+e0:69:95:33:19:3f	#Morelos
+
+
+# Campus Virtual
+# ---------------------------------------
+70:1a:04:83:e1:8a	#Callejas
+00:24:e8:f1:bf:a0	#Callejas
+00:16:ce:64:e3:61	#Erick Simancas			254.178		acer
+00:11:24:dc:8b:ca	#Montze				255.116		mac	e
+c8:2a:14:2f:54:80	#Dr Callejas			254.120		mac	e
+e0:f8:47:3c:f7:c2	#Dr Callejas			254.120		mac	w
+00:10:dc:73:74:ae	#Patricia Robles
+00:23:5a:bb:a5:bf	#Patricia robles		252.77		hp	e
+
+# Ingles
+# ---------------------------------------
+6c:f0:49:8d:fe:e5	#Parley
+10:78:D2:91:F6:AF	#Guadalupe Carmona		253.153		
+
+
+# Humanidades
+# ---------------------------------------
+64:31:50:2b:8a:85	#Mayte Olivares Escorza	#253.148	#hp
+
+# Equipos varios
+# ---------------------------------------
+00:13:02:a1:4f:6c	#Jose Novoa		#253.84		#Dell Inspiron
+00:14:A5:CB:C5:09	#Giordana
+00:e0:b8:ae:57:e7	#Giordana lap eth TEMPORAL
+00:1A:4D:76:EE:38	#karmina
+00:0c:6e:8e:97:dd	#Karmina GG control escolar
+00:11:5b:8b:41:70       #Contadora Lucy tovar
+00:0f:20:2c:3f:e7       #Contadora Ma Fernanda
+00:13:a9:7d:fd:06       #Gracida
+00:18:de:62:bf:be       #Gracida Lap sony wireless
+00:14:d1:13:26:42       #Jannet Biblioteca
+00:13:02:AB:3D:C8       #Dr rincon
+00:14:BF:3F:81:48       #Albino
+00:17:F2:06:2E:E6       #Luciano
+00:1D:7E:18:CF:85       #Marco Tulio
+00:02:E3:51:A4:3D       #Pati Robles
+00:15:8a:01:0c:6c	#Valentin Trujillo
+00:18:39:13:a5:6e       #Arturo Gamino
+00:17:f2:e8:69:47       #Luciano Lap Mac
+00:16:EC:F6:A9:0D       #Francisco Macotela
+00:02:3f:74:76:f8       #Lap Macotela
+#00:11:d8:46:60:99       #Valdivieso
+00:1f:3c:27:8f:b3       #Gamino lap
+00:1f:3c:27:8a:23       #Valentin lap
+00:1e:c9:65:48:d4	#sra vicky
+00:1a:4d:76:e1:b2       #Coordinador terapia
+00:1f:3c:54:ae:f4       #Francisco Macotela lap xps
+00:15:8a:01:ac:84       #Tavizon Escritorio
+00:e0:91:0c:7d:28       #Tavizon Lap
+00:15:8a:01:ac:2a       #Dr Albino
+00:15:8a:01:ac:6f	#Ruben Ballesteros
+00:1a:4d:76:e4:0c	#Eduardo Tavizon
+00:1d:7d:2a:7c:04	#Libeth Hernandez Tejeda
+00:1e:c9:65:3f:76	#Mayte
+00:14:a4:2c:99:b2	#Lap David Acer
+00:1f:3c:88:8e:56	#Contralor maquina nueva
+00:15:8a:01:ac:75	#Perez Mesa
+00:14:5e:55:e5:54	#Vicodin
+#00:11:d8:cf:fa:7c	#Eduardo Lalo site
+#00:1d:7d:2a:7c:2b	#Benjamin
+00:01:4a:06:77:a0	#Evert
+00:1e:c9:65:a2:ff	#Susana Rincon
+00:e0:4d:44:ec:7f	#Evert pc
+00:1e:c9:64:a7:29	#Juana
+00:1c:c0:0a:70:5c	#Said
+00:16:76:7f:3e:e9	#Ulices
+00:1e:90:63:59:5b	#Alvaro
+00:21:70:a8:92:ed	#Marco
+00:11:24:a6:9d:ad	#Alvaro
+00:1e:c9:65:4b:42	#Mayra
+00:14:5e:55:e4:e5	#Serv de pruebas
+00:14:5e:55:e4:e4	#Serv de pruebas
+00:1e:c9:65:5b:1e	#Coord Terapia
+00:23:8b:15:bc:9a	#Lap acer one Javier eth
+00:23:4e:1f:4e:66	#Lap acer one Javier wirelless
+08:00:27:7c:67:80	#Router lab !!!!!!!!!!!!!!!!!!!!!!!!!!!
+00:18:de:20:c6:2b	#C.P. Ma. de la luz Wireless
+00:17:08:38:82:7f	#C.P. Ma. de la luz ethernet
+00:14:a4:2c:9a:b1	#Lap acer david
+00:17:f2:e8:6c:15	#Dr Alejandro Zepeda
+00:1e:c9:65:44:c8	#maru
+00:21:5c:5a:bc:8d	#Marco gm
+00:21:70:a8:92:ed	#Marco gm
+00:1f:3c:c7:5b:66	#evert
+00:21:9b:ee:e4:11	#ever lap
+00:16:e6:60:3f:02	#Diego nomina
+00:1e:c9:65:4c:33	#Julio Salgado	E
+00:15:8a:01:ac:4f	#Julio Salgado 	W
+00:1e:c9:65:40:3f	#desarrollo
+00:19:db:f7:40:c4	#Ulices casa
+00:30:48:86:9B:6E	#76 Biblioteca
+00:1b:77:41:b8:cc	#Salas lap
+00:16:44:f3:e4:79	#temporal cuba
+00:14:a5:cb:c6:3f	#Edith Control Escolar
+00:26:5e:3a:17:37	#Ivan Garrido Marquez lap
+08:00:27:fb:5c:62	#temporal
+00:26:5e:66:cf:ba	#auditor temporal
+00:26:5e:4c:26:eb	#Lap Cometa
+00:24:2c:98:85:5c	#Benjamin Compaq
+00:26:ff:3c:e7:08	#Medina BlackBerry
+00:26:5e:49:55:df	#Zaid
+00:0c:29:77:73:5a	#Mayra Ubuntu temporal
+00:15:8a:01:ab:53	#temporal lab V
+#00:0E:35:9F:1F:B9	#sony vaio benja
+00:1a:73:c8:1b:dc	#TEmpporal posgrado
+00:1a:80:49:b3:8d	#Ever
+08:00:27:97:8e:09	#higor
+00:1c:bf:61:c3:9e	#Julio S
+00:18:de:92:43:f7	#Liliana
+00:1a:73:97:f0:32	#Sonia
+00:1c:c0:0a:77:4b	#Marco desarrollo
+00:26:5e:49:55:df	#btello
+00:22:fa:c5:9d:8e	#auditora
+00:26:5e:4c:25:6c	#Lap laura
+00:26:5e:4c:26:eb	#Cometa lap acer
+00:1B:38:61:E9:16	#Cometa maquina linux
+90:4c:e5:11:4f:d7	#Katmina
+00:13:d4:8f:99:64	#Liliana e
+08:00:27:a8:7c:d0       #       15      DragonFly
+00:1e:c9:65:43:c3	#255.251	dra rocio alvarez garcia coord bio
+00:30:48:85:95:38
+00:30:48:85:95:39
+00:24:2c:42:d6:b7	#Marco Flores acer mini
+00:1e:c9:65:40:3f	#Jose Francisco Morelos Fernández
+08:00:27:83:b5:11	#Router Alumnos Yeu 2
+00:26:5e:4c:2a:08	#Eduardo Castillo Lap
+c4:17:fe:12:8e:bd	#Lap dell calderon
+00:e0:4d:44:e5:03	#Dr. Edgar Ernesto Vera Cardenas temporal
+00:0f:20:2c:40:be	#Carmen salinas lecona
+00:1a:92:fd:15:db	#Elimar ethernet
+00:16:44:12:cc:97	#Elimar wireless
+00:13:e8:db:d3:29	#
+00:0e:35:9f:1f:b9	#Lap sony site
+00:1e:52:89:48:4b	#Cometa temporal
+00:16:4E:AD:E7:D3	#Cometa cel
+00:25:9C:A0:D2:37	#Carmen salinas lecona
+00:1f:3c:27:8a:23	#Valentin Trujillo
+00:22:69:0B:1F:F4	#Eduardo GG
+00:1b:77:df:94:c2	#Abogado
+AA:00:04:00:0a:04	#Evert maquina del site
+00:21:6b:16:88:4a	#Lap rector
+00:22:fb:87:a4:e6	#Lap laura temporal
+00:30:48:86:9b:b8	#evert temporal
+00:0f:20:27:b3:b0	#evert temporal
+00:24:36:b8:45:e4	#Yuridia Mercado
+00:14:d1:13:25:9c	#GIna
+00:1a:4d:76:ef:a1	#Karla casa amarilla
+08:00:46:30:38:9d	#Postgrado
+00:1d:4f:f9:c4:1f	#Cavo
+00:02:e3:51:a4:90	#Eduardo mendoza
+00:1e:c9:65:40:59	#julio cesar olvera
+00:1a:4d:76:ee:de	#Lugar liz administracion
+00:e0:4d:44:ec:df	#Tonno contraloria
+b4:82:fe:13:f7:ef	#Contralor lap toshiba
+00:26:2d:31:f6:48	#Elimar pc emachines
+00:26:b6:f1:d9:6f	#ing jorge lap toshiba
+00:26:b6:f0:35:67	#cp alda nelly toshiba
+00:26:b6:f0:36:2b	#ing manuel sonrrics toshiba
+08:00:27:02:fd:a9	#antivirus
+c0:cb:38:18:07:82	#lap elimar i3
+c0:cb:38:18:16:a0	#lap aldanelly i3
+44:87:fc:8c:8a:52	#Lulu rectoria
+1c:6f:65:84:ae:1f	#javier ventura
+00:0f:20:2c:40:0f	#Jonathan administracion
+00:0f:20:1f:46:d1	#Dr. posgrado conacyth
+90:4c:e5:76:4d:c1	#Victor temporal
+00:18:e7:74:a7:b4	#Julio Salgado			#253.140	pc	w
+00:18:e7:63:9f:f0	#Eduardo
+00:1d:7d:2a:a6:a7	#Ploter				#255.134	pc	e
+00:1e:c9:65:4c:33	#sra vicky			254.36
+00:15:8a:01:ac:25	#sara roldan			253.154
+00:1e:68:ca:f9:09	#gregorio garrido castro	253.14
+00:14:a5:cb:c7:49	#karina de jesus		253.132
+00:e0:4d:44:e5:a6	#gregoria del carmen		253.131
+10:78:d2:97:af:07	#jossue roman			253.133
+10:78:d2:93:84:b6	#alfonso jaramillo		252.99
+00:14:a5:cb:c7:56	#mc
+00:11:95:c2:73:df	#benjamin desarrollo		252.120
+00:25:9c:a0:d2:73	#estrada			252.121
+00:23:15:99:63:28	#pablo				252.122
+00:25:9c:7d:60:ad	#pablo				252.123
+00:12:17:99:e6:62	#estrada			?
+#6c:f0:49:8d:f9:75	#bambivieso
+ac:81:12:bd:58:a8	#marroquin
+00:18:e7:63:a5:59	#Alicia
+00:24:d2:48:ee:da	#Alicia
+00:23:5a:f2:ab:b7	#Lap pequenna site

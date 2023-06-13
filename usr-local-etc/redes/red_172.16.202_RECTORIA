@@ -1,0 +1,20 @@
+#Red de
+#Rectoria
+#172.16.202.1-16
+#255.255.255.240
+#172.16.202.1
+#172.16.202.1
+#-----------------------------
+68:a8:6d:0e:23:da	#2	MacBook Air Arteaga
+	#MAquina con doble IP 252.75 para entrar a la intranet
+40:30:04:4a:e2:49	#3	IPAD Arteaga
+2c:1f:23:17:ef:a8	#3	IPAD Arteaga 2
+f0:4d:a2:9b:82:a2	#4	dell vostro ethernet
+c0:cb:38:18:08:35	#4	dell vostro wireless
+#5
+#6
+#7
+#8
+#9
+#10
+88:63:df:ac:64:71	#11	David Soto MAC escritorio

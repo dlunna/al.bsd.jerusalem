@@ -1,0 +1,4 @@
+cp /etc/dns/hosts.upp /etc/hosts
+/usr/local/etc/rc.d/dnsmasq restart
+/usr/local/etc/rc.d/squid reload
+

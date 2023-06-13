@@ -1,0 +1,5 @@
+/usr/local/etc/rc.d/squid stop
+rm -R /var/squid/cache/*
+squid -z
+/usr/local/etc/rc.d/squid start
+

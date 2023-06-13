@@ -1,0 +1,207 @@
+dbhome /var/db/squidGuard/b2
+logdir /var/log
+
+# s = sun, m = mon, t =tue, w = wed, h = thu, f = fri, a = sat
+time freetime {
+     weekly mtwhf 00:00-08:35
+     weekly mtwhf 16:00-23:59
+     weekly sa 00:00-23:59
+}
+
+time facebooktime {
+     weekly mtwhf 10:00-15:00     
+}
+
+# los nombres de las definiciones sin numeros
+# -------------------------------------------
+
+src servidores {
+  ip 192.168.253.76	#Biblioteca
+}
+
+src libres {
+  #ip 192.168.253.240	#Javier
+  #ip 192.168.252.8	#Valdelamar
+  #ip 192.168.253.199	#David Luna
+  #ip 192.168.253.160	#Benjamin
+  ip 192.168.254.198	#kbo
+  #ip 192.168.253.13	#Lalo comunic
+  #ip 192.168.255.116	#Montze
+  #ip 192.168.253.123	#Sonrrics
+  #ip 192.168.255.73	#cometa
+  #ip 192.168.255.179	#jhonny
+  #ip 192.168.252.199	#conejito
+  #ip 192.168.253.96	#Laura Penna
+}
+
+src callejas {
+  ip 192.168.254.102
+  ip 192.168.255.42
+  ip 192.168.254.178
+}
+
+src realdecatorce {
+  ip 192.168.253.1
+}
+
+src dragonfly {
+  ip 192.168.253.15
+}
+
+src tsunamis {
+  ip 192.168.253.17
+  ip 192.168.253.18
+  ip 192.168.253.19
+  ip 192.168.253.20
+  ip 192.168.253.21
+}
+
+src administracion {
+  ip 192.168.253.125	#Ing. Jorge
+  ip 192.168.254.19	#Felipe Vega
+}
+
+src site {
+  ip 192.168.253.199	#David Luna
+  ip 192.168.253.240	#Javier Ventura
+  ip 192.168.255.73	#Eduardo Flores Calderon 
+  ip 192.168.253.202	#Eduardo Flores Calderon Hacer
+  ip 192.168.252.8	#Omar Daniel Valdelamar
+  ip 192.168.253.159	#Eduardo Castillo
+  ip 192.168.253.96	#Laura Penna
+  ip 192.168.253.158	#Benjamin 2
+  ip 192.168.253.160	#Benjamin 1
+  ip 192.168.255.179	#Jonny
+}
+
+# definicion de bases de datos
+# -------------------------------------------
+
+dest porn {
+        domainlist porn/domains
+        urllist porn/urls
+        expressionlist porn/expressions
+}
+
+dest proxy {
+        domainlist proxy/domains
+        urllist proxy/urls
+}
+
+dest filehosting {
+        domainlist filehosting/domains
+        urllist filehosting/urls
+}
+
+dest adult {
+        domainlist adult/domains
+        urllist adult/urls
+}
+
+dest audio-video {
+        domainlist audio-video/domains
+        urllist audio-video/urls
+}
+
+dest malware {
+        domainlist malware/domains
+        urllist malware/urls
+}
+
+dest facebook {
+        domainlist facebook/domains
+        urllist facebook/urls
+}
+
+# Aplicacion de reglas
+# -------------------------------------------
+
+acl {
+
+     libres {
+         pass all
+     }
+
+#################################################################################
+
+     servidores {
+         pass all
+     }
+
+#################################################################################
+
+    realdecatorce within freetime{
+         pass !porn !adult !malware all
+     }
+    realdecatorce within facebooktime {
+         pass !porn !proxy !filehosting !audio-video !facebook !adult !malware all
+     } else {
+         pass !porn !proxy !filehosting !audio-video !adult !malware all
+     }
+
+#################################################################################
+
+    callejas within freetime{
+         pass !porn all     
+     } else {
+         pass !porn !proxy !filehosting !audio-video !adult !malware all
+     }
+
+
+#################################################################################
+
+    dragonfly within freetime{
+         pass !porn all
+     }
+    dragonfly within facebooktime {
+         pass !porn !proxy !filehosting !audio-video !facebook !adult !malware all
+     } else {
+         pass !porn !proxy !filehosting !audio-video !adult !malware all
+     }
+
+#################################################################################
+
+    administracion within freetime{
+         pass all
+     }
+    administracion within facebooktime {
+         pass !porn !proxy !filehosting !audio-video !facebook !adult !malware all
+     } else {
+         pass !porn !proxy !filehosting !audio-video !adult !malware all
+     }
+
+#################################################################################
+
+    site within freetime{
+         pass all
+     }
+    site within facebooktime {
+         pass !porn !proxy !filehosting !audio-video !facebook !adult !malware all
+     } else {
+         pass !porn !proxy !filehosting !audio-video !adult !malware all
+     }
+
+#################################################################################
+
+    tsunamis within freetime{
+         pass all
+     }
+    tsunamis within facebooktime {
+         pass !porn !proxy !filehosting !audio-video !facebook !adult !malware all
+     } else {
+         pass !porn !proxy !filehosting !audio-video !adult !malware all
+     }
+
+#################################################################################
+
+     default within freetime{
+         pass !porn !adult !malware all
+         #redirect http://www.upp.edu.mx
+     }
+     else {
+         pass !porn !proxy !filehosting !audio-video !facebook !adult !malware all
+         redirect http://192.168.253.254
+     }
+
+}########### fin del script
+

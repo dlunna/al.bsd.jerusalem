@@ -1,0 +1,33 @@
+#Enero de 2011
+# Archivo de configuracion de FREEBSD por dlunna.
+#------------------------------------------------------------------------
+# Configuracion de sistema
+        keymap="spanish.iso"
+        linux_enable="YES"
+
+# Configuracion de Red
+        hostname="jerusalem.upp.edu.mx"
+        gateway_enable="YES"
+        defaultrouter="189.204.122.65"
+
+	#PUBLICAS
+        	ifconfig_bge0="inet 189.204.122.67 netmask 255.255.255.192"
+
+	#SiTE
+        	ifconfig_bge1="inet 172.16.100.1 netmask 255.255.255.0"
+
+# Servicios Varios
+        sshd_enable="YES"
+        usbd_enable="YES"
+        squid_enable="YES"
+        dnsmasq_enable="YES"
+        apache22_enable="YES"
+        ntpdate_enable="YES"
+
+#Packet Filter
+        pf_enable="YES" 			# Enable PF (load module if required
+        pf_rules="/etc/tablas/pf.conf"	# rules definition file for pf
+        pf_flags=""				# additional flags for pfctl startup
+        pflog_enable="YES"			# start pflogd(8)
+        pflog_logfile="/var/log/pflog"		# where pflogd should store the log
+        pflog_flags=""				# additional flags for pflogd startup

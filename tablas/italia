@@ -1,0 +1,111 @@
+# Lista de servidores ITALIA
+# ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+        # Servidores de CONACYT
+# -----------------------------
+148.207.1.3     #conacyt.mx
+67.215.65.132   #main.conacyt.mx
+148.207.1.42    #hrmsepws.main.conacyt.mx
+148.207.1.34    #epmwserv.main.conacyt.mx
+148.207.1.28    #svrpsbck.main.conacyt.mx
+172.16.6.31     #intranet.main.conacyt.mx
+148.207.1.10	#siicyt.main.conacyt.mx
+
+        # Servidores de alamandra
+# -----------------------------
+184.168.50.1	#alamandra.com
+
+        # Sep
+# -----------------------------
+#168.255.101.143 #www.historiasdefamilia.sep.gob.mx
+
+        # ISSSTE
+# -----------------------------
+201.116.34.25   #sipenet.issste.gob.mx
+201.140.80.25   #sipenet.issste.gob.mx
+201.144.219.147 #issste
+201.144.219.146	#Cita del issste
+201.140.80.219	#serica12b.issste.gob.mx
+
+        # UPP
+# -----------------------------
+200.36.121.26
+200.36.121.27
+200.36.121.28
+200.36.121.29
+
+        # UAM
+# -----------------------------
+148.206.32.30   #www.izt.uam.mx
+148.206.53.230  #amoxcalli.uam.mx
+148.206.53.9    #biblio.iztapalapa.uam.mx
+148.206.53.243	#Catalogo en linea
+148.206.159.132	#www.bidi.uam.mx
+
+        # Pronabes
+# -----------------------------
+200.23.107.50   #Servidor raro de pronabes
+
+        # CINVESTAV
+# -----------------------------
+#148.247.74.8	#MatEdu
+148.247.97.1	#ctrl.cinvestav.mx
+148.247.66.51	#correo.cinvestav.mx
+
+	# WCITC
+# -----------------------------
+#174.136.53.248
+
+	# grupoquasares.com.mx
+188.165.205.201
+
+	# Saya
+# -----------------------------
+174.120.131.20
+174.121.244.18
+
+	# Secretaria del Trabajo
+# -----------------------------
+207.249.3.14	#http://autogestion.stps.gob.mx:8162
+
+	# Web de pablo
+# -----------------------------
+#67.225.217.179	#http://polmacsystems.net
+#50.23.90.221	#http://polmacsystems.com
+
+	# Buro de credito
+# -----------------------------
+187.141.53.130	#https://wbc1.burodecredito.com.mx:543/RceOnline/
+207.249.90.183	#burodecredito.com.mx
+
+	# pop.gmail.com
+# ----------------------------
+74.125.45.108 
+74.125.45.109
+
+	# HP
+# ----------------------------
+15.217.49.142	#ftp.hp.com
+15.217.49.75	#ftp.hp.com
+15.201.202.80
+15.192.45.26
+15.192.40.12
+15.240.238.55
+
+	# SAT
+# ----------------------------
+200.33.74.102	#ftp2.sat.gob.mx
+
+	# FTP Kbo
+# ----------------------------
+201.116.238.57
+
+	# Mirrors Debian
+# ----------------------------
+149.20.4.71	#mirrors.kernel.org
+132.248.181.190	#tezcatl.fciencias.unam.mx
+132.248.181.148	#nisamox.fciencias.unam.mx
+
+	# Augusto
+# ----------------------------
+209.190.73.45	

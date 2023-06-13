@@ -1,0 +1,44 @@
+#Enero de 2011
+# Archivo de configuracion de FREEBSD por dlunna.
+#------------------------------------------------------------------------
+# Configuracion de sistema
+        keymap="spanish.iso"
+        linux_enable="YES"
+
+# Configuracion de Red
+        hostname="jerusalem.upp.edu.mx"
+        gateway_enable="YES"
+        defaultrouter="189.204.122.65"
+
+	#PUBLICAS
+        	ifconfig_bge0="inet 189.204.122.67 netmask 255.255.255.192"
+        	#ifconfig_bge0_alias0="inet 200.78.218.33 netmask 255.255.255.224"
+
+	#INTERNAS
+        	ifconfig_bge1="inet 192.168.253.254 netmask 255.255.252.0"
+	#SiTE
+        	ifconfig_bge1_alias0="inet 172.16.200.1 netmask 255.255.255.240"
+	#Rectoria
+        	ifconfig_bge1_alias1="inet 172.16.202.1 netmask 255.255.255.240"
+	#Red para profesores
+        	ifconfig_bge1_alias2="inet 192.168.253.1 netmask 255.255.252.0"
+        #Lab de ingles (arriba de biblioteca) 62 equipos
+                ifconfig_bge1_alias3="inet 172.16.72.1 netmask 255.255.255.192"
+        #Lab de paty robles (arriba de biblioteca) 62 equipos
+                ifconfig_bge1_alias4="inet 172.16.73.1 netmask 255.255.255.192"
+
+# Servicios Varios
+        sshd_enable="YES"
+        usbd_enable="YES"
+        squid_enable="YES"
+        dnsmasq_enable="YES"
+        apache22_enable="YES"
+        ntpdate_enable="YES"
+
+#Packet Filter
+        pf_enable="YES" 			# Enable PF (load module if required
+        pf_rules="/etc/tablas/pf.conf"	# rules definition file for pf
+        pf_flags=""				# additional flags for pfctl startup
+        pflog_enable="YES"			# start pflogd(8)
+        pflog_logfile="/var/log/pflog"		# where pflogd should store the log
+        pflog_flags=""				# additional flags for pflogd startup

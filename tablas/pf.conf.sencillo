@@ -1,0 +1,35 @@
+# Octubre, 2011
+# PacketFilter Configuration FILE by dlunna.
+#----------------------------------------------------------------
+# macro definitions
+
+int_if="bge1"    #192.168.253.254
+ext_if="bge0"    #200.36.121.30
+
+#----------------------------------------------------------------
+# options: "set"
+#			1,000,000
+set limit states 	1000000
+set limit frags  	1000000
+set limit src-nodes 	1000000
+set loginterface $int_if
+
+#----------------------------------------------------------------
+# scrub rules: "scrub"
+scrub in on $ext_if all
+scrub in on $int_if all
+
+#----------------------------------------------------------------
+# NAT rules: "rdr", "nat", "binat"
+rdr on $int_if inet proto {tcp, udp} from any to any port www -> $int_if port 3128
+rdr on $ext_if inet proto {tcp, udp} from any to any port 3000 -> 192.168.252.201 port 3000
+rdr on $ext_if inet proto {tcp, udp} from any to any port www -> 192.168.252.201 port www
+rdr on $ext_if inet proto {tcp, udp} from any to any port 9999 -> 192.168.253.253 port 9999
+rdr on $ext_if inet proto {tcp, udp} from any to any port 8080 -> 192.168.253.253 port 8080
+
+nat on $ext_if from $int_if:network to any -> $ext_if
+
+#----------------------------------------------------------------
+# filtering rules: "antispoof", "block", "pass"
+	#Super antispoof
+#antispoof quick for $int_if inet
